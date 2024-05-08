@@ -28,4 +28,42 @@ console.log(servicePercentPrice);
 if (fullPrice > 50000) console.log("Сделаем скидку 10%");
 else if (fullPrice > 20000 && fullPrice <= 50000) console.log("Сделаем скидку 5%");
 else if (fullPrice <= 20000 && fullPrice > 0) console.log("Скидка не предусмотрена");
-else if(fullPrice <=0) console.log("Что-то пошло не так");
+else if (fullPrice <= 0) console.log("Что-то пошло не так");
+
+const getAllPrices = function() {
+    return servicePrice1 + servicePrice2;
+}
+
+let allServicePrices = getAllPrices();
+console.log("allServicePrices=", allServicePrices);
+
+function getFullPrice() {
+    return allServicePrices + screenPrice;
+}
+
+fullPrice = getFullPrice();
+console.log("fullPrice=", fullPrice);
+
+function getTitle() {
+    titleProject = titleProject[0].toUpperCase() + titleProject.slice(1).toLowerCase();
+    return titleProject;
+}
+console.log("titleProject=", getTitle());
+
+function getServicePercentPrices() {
+    return Math.round(fullPrice * (1 - percentage / 100));
+}
+servicePercentPrice = getServicePercentPrices();
+console.log("servicePercentPrice=", servicePercentPrice);
+
+function getRollbackMessage() {
+    let discount = 0;
+    if (servicePercentPrice > 50000) discount = 10;
+    else if (servicePercentPrice > 20000 && servicePercentPrice <= 50000) discount = 5;
+    else if (servicePercentPrice <= 20000 && servicePercentPrice > 0) discount = 0;
+    else if (servicePercentPrice <= 0) console.log("Что-то пошло не так");
+
+    console.log("Ваша скидка = ", discount, "%");
+}
+
+getRollbackMessage();
