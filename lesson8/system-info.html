@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  --><!--  Last Published: Tue May 07 2024 07:58:13 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  --><!--  Last Published: Mon May 20 2024 07:19:20 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="661e1b1d0bf595cfb71e4439" data-wf-site="65e705ee3477f778b9760563">
 <head>
   <meta charset="utf-8">
@@ -19,6 +19,8 @@
   <link href="images/webclip.png" rel="apple-touch-icon">
   <meta name="robots" content="noindex, nofollow">
   <meta name="author" content="wtw">
+  <!--  [Attributes by Finsweet] Custom Form Select  -->
+  <script defer="" src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-selectcustom@1/selectcustom.js"></script>
   <style>
 .container::-webkit-scrollbar {
 width: 4px;
@@ -413,17 +415,19 @@ body {
             <div class="checkbox-form w-form">
               <form id="email-form" name="email-form" data-name="Email Form" method="get" class="check-form" data-wf-page-id="661e1b1d0bf595cfb71e4439" data-wf-element-id="15dbd127-a49f-9cb6-7374-f39eddb42f96">
                 <div class="hflex mb-00">
-                  <div data-hover="false" data-delay="0" class="edit-drop w-dropdown">
+                  <div data-hover="false" data-delay="0" fs-selectcustom-element="dropdown" class="edit-drop w-dropdown">
                     <div class="dropdown-toggle disable users pr-0 w-dropdown-toggle">
                       <div class="edit-line no-line">
                         <div class="text-10">GUI SSL Сертификат*</div>
                         <div class="edit-line flex mb-0 mr-0">
-                          <div>ananas_default</div><img src="images/bxs_up-arrow1.svg" loading="lazy" alt="" class="q-img">
+                          <div fs-selectcustom-element="label">ananas_default</div><img src="images/bxs_up-arrow1.svg" loading="lazy" alt="" class="q-img">
                         </div>
                       </div>
                       <a data-tippy-content="GUI SSL Сертификат. Для обеспечения зашифрованных подключений к веб-интерфейсу система использует самоподписанный сертификат. Чтобы изменить сертификат по умолчанию, выберите другой сертификат, который был создан или импортирован, в меню Сертификаты." href="#" class="linkdown tippy w-inline-block"><img src="images/lets-icons_question-light.svg" loading="lazy" alt="" class="q-img"></a>
                     </div>
-                    <nav class="dropdown-content w-dropdown-list">
+                    <nav class="dropdown-content w-dropdown-list"><select id="field-3" name="field-3" data-name="Field 3" class="fs-dropdown-1 w-select">
+                        <option value="ananas_default">ananas_default</option>
+                      </select>
                       <a href="#" class="drop-link w-inline-block">
                         <div class="drop-text2">ananas_default</div>
                       </a>
@@ -443,7 +447,7 @@ body {
                       <a data-tippy-content="Адрес web интерфейса IPv4. Выберите последний IP-адрес, чтобы ограничить его использование при доступе к административному GUI. Встроенный HTTP-сервер привязывается к подстановочному адресу 0.0.0.0 (любой адрес) и выдает предупреждение, если указанный адрес становится недоступным." href="#" class="linkdown tippy w-inline-block"><img src="images/lets-icons_question-light.svg" loading="lazy" alt="" class="q-img"></a>
                     </div>
                     <nav class="dropdown-content w-dropdown-list">
-                      <a data-w-id="f7ac16a6-1601-ff2d-5504-eff71bea7e2e" href="#" class="drop-link animate w-inline-block"><img src="images/ic_round-minus2.svg" loading="lazy" style="display:none" data-w-id="f7ac16a6-1601-ff2d-5504-eff71bea7e2f" alt="" class="drop-img2 hide"><img src="images/el_ok-circle1.svg" loading="lazy" style="display:flex" data-w-id="f7ac16a6-1601-ff2d-5504-eff71bea7e30" alt="" class="drop-img2 show">
+                      <a href="#" class="drop-link animate w-inline-block"><img src="images/ic_round-minus2.svg" loading="lazy" alt="" class="drop-img2 hide"><img src="images/el_ok-circle1.svg" loading="lazy" alt="" class="drop-img2">
                         <div class="drop-text2">0.0.0.0</div>
                       </a>
                     </nav>
@@ -463,7 +467,7 @@ body {
                       <a data-tippy-content="Адрес web интерфейса IPv6. Выберите последний IPv6-адрес, чтобы ограничить его использование при доступе к административному GUI. Встроенный HTTP-сервер привязывается к подстановочному адресу 0.0.0.0 (любой адрес) и выдает предупреждение, если указанный адрес становится недоступным." href="#" class="linkdown tippy w-inline-block"><img src="images/lets-icons_question-light.svg" loading="lazy" alt="" class="q-img"></a>
                     </div>
                     <nav class="dropdown-content w-dropdown-list">
-                      <a data-w-id="e51fa0e7-8c38-210b-9c8b-5e7de49e6ab2" href="#" class="drop-link animate w-inline-block"><img src="images/ic_round-minus2.svg" loading="lazy" style="display:none" data-w-id="e51fa0e7-8c38-210b-9c8b-5e7de49e6ab3" alt="" class="drop-img2 hide"><img src="images/el_ok-circle1.svg" loading="lazy" style="display:flex" data-w-id="e51fa0e7-8c38-210b-9c8b-5e7de49e6ab4" alt="" class="drop-img2 show">
+                      <a href="#" class="drop-link animate w-inline-block"><img src="images/ic_round-minus2.svg" loading="lazy" alt="" class="drop-img2 hide"><img src="images/el_ok-circle1.svg" loading="lazy" alt="" class="drop-img2">
                         <div class="drop-text2">::</div>
                       </a>
                     </nav>
@@ -491,16 +495,16 @@ body {
                       <a data-tippy-content="Протоколы HTTPS. Криптографические протоколы для защиты соединений клиент/сервер. Выберите, какие версии Transport Layer Security (TLS) Ananas может использовать для защиты соединений." href="#" class="linkdown tippy w-inline-block"><img src="images/lets-icons_question-light.svg" loading="lazy" alt="" class="q-img"></a>
                     </div>
                     <nav data-w-id="bc0d7844-06c5-aaa5-965d-c181ae3fd2ea" style="display:none" class="dropdown-content w-dropdown-list">
-                      <a data-w-id="bc0d7844-06c5-aaa5-965d-c181ae3fd2eb" href="#" class="drop-link animate w-inline-block"><img src="images/ic_round-minus2.svg" loading="lazy" style="display:flex" data-w-id="bc0d7844-06c5-aaa5-965d-c181ae3fd2ec" alt="" class="drop-img2"><img src="images/el_ok-circle1.svg" loading="lazy" style="display:none" data-w-id="bc0d7844-06c5-aaa5-965d-c181ae3fd2ed" alt="" class="drop-img2 hide">
+                      <a href="#" class="drop-link animate w-inline-block"><img src="images/ic_round-minus2.svg" loading="lazy" alt="" class="drop-img2"><img src="images/el_ok-circle1.svg" loading="lazy" alt="" class="drop-img2 hide">
                         <div class="drop-text2">TLSv1</div>
                       </a>
-                      <a data-w-id="a21c9152-99f2-4e83-1d8c-9deec19ecfb8" href="#" class="drop-link animate w-inline-block"><img src="images/ic_round-minus2.svg" loading="lazy" style="display:flex" data-w-id="a21c9152-99f2-4e83-1d8c-9deec19ecfb9" alt="" class="drop-img2 show"><img src="images/el_ok-circle1.svg" loading="lazy" style="display:none" data-w-id="a21c9152-99f2-4e83-1d8c-9deec19ecfba" alt="" class="drop-img2 hide">
+                      <a href="#" class="drop-link animate w-inline-block"><img src="images/ic_round-minus2.svg" loading="lazy" alt="" class="drop-img2"><img src="images/el_ok-circle1.svg" loading="lazy" alt="" class="drop-img2 hide">
                         <div class="drop-text2">TLSv1.1</div>
                       </a>
-                      <a data-w-id="bd83a9a6-4790-e9cf-1e8e-eff867a197fc" href="#" class="drop-link animate w-inline-block"><img src="images/ic_round-minus2.svg" loading="lazy" style="display:none" data-w-id="bd83a9a6-4790-e9cf-1e8e-eff867a197fd" alt="" class="drop-img2 hide"><img src="images/el_ok-circle1.svg" loading="lazy" style="display:flex" data-w-id="bd83a9a6-4790-e9cf-1e8e-eff867a197fe" alt="" class="drop-img2 show">
+                      <a href="#" class="drop-link animate w-inline-block"><img src="images/ic_round-minus2.svg" loading="lazy" alt="" class="drop-img2 hide"><img src="images/el_ok-circle1.svg" loading="lazy" alt="" class="drop-img2">
                         <div class="drop-text2">TLSv1.2</div>
                       </a>
-                      <a data-w-id="7ff15adc-c184-f88c-035a-560650aae96b" href="#" class="drop-link animate w-inline-block"><img src="images/ic_round-minus2.svg" loading="lazy" style="display:none" data-w-id="7ff15adc-c184-f88c-035a-560650aae96c" alt="" class="drop-img2 hide"><img src="images/el_ok-circle1.svg" loading="lazy" style="display:flex" data-w-id="7ff15adc-c184-f88c-035a-560650aae96d" alt="" class="drop-img2 show">
+                      <a href="#" class="drop-link animate w-inline-block"><img src="images/ic_round-minus2.svg" loading="lazy" alt="" class="drop-img2 hide"><img src="images/el_ok-circle1.svg" loading="lazy" alt="" class="drop-img2">
                         <div class="drop-text2">TLSv1.3</div>
                       </a>
                     </nav>
@@ -647,6 +651,7 @@ body {
   </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=65e705ee3477f778b9760563" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
+  <script scr="/lesson7"></script>
   <script>
 document.addEventListener('DOMContentLoaded', (event) => {
  function setFontSize() {
@@ -683,6 +688,5 @@ tippy('.tippy', {          // Add the class tippy to your element
 	maxWidth: 240,           // Optional, max width settings
 })
 </script>
-<script src="/gsap-course/lesson8/lesson8.js"></script>
 </body>
 </html>
